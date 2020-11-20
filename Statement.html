@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating methods in a template</title>
+    <script language="javascript" type="text/javascript">
+        function display()
+        {
+            var employee = new Object();
+            employee.name = "Minh Triet";
+            employee.salary = "300";
+            with(employee)
+            {
+                document.write("Name: "+name+"<br>")
+                document.write("Salary: "+salary+"<br>")
+            }
+        }
+    </script>
+
+</head>
+<body onLoad="display()">
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single-dimensional array</title>
+    <script language="javascript" type="text/javascript">
+        var emp = new Array(3);
+        emp[0] = new Array('Huynh Bay', '1900');
+        emp[1] = new Array('Minh Thanh', '900');
+        emp[2] = new Array('Tan Hung', '800');
+        document.write('<table border = 1> <tr> <th>Name</th> <th>Salary</th></tr>');
+        for (var i = 0; i<emp.length ; i++)
+        {
+            document.write('<tr>');
+            for(var j=0; j<emp[i].length; j++)
+                document.write('<td>' + emp[i][j] + '</td>');
+            document.write('</tr>')
+        }
+        document.write('</table>')
+    </script>
+</head>
+<body>
+
+</body>
+</html>
